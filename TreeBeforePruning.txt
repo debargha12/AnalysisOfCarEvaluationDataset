@@ -1,0 +1,575 @@
+*************Tree before pruning*******
+Is lug_boot == low?
+--> True:
+  Predict {'unacc': 463}
+--> False:
+  Is doors == 2?
+  --> True:
+    Predict {'unacc': 310}
+  --> False:
+    Is buying  == vhigh?
+    --> True:
+      Is persons == small?
+      --> True:
+        Is lug_boot == med?
+        --> True:
+          Predict {'unacc': 24}
+        --> False:
+          Is maint == 2?
+          --> True:
+            Is doors == 4?
+            --> True:
+              Predict {'unacc': 2, 'acc': 1}
+            --> False:
+              Predict {'unacc': 4}
+          --> False:
+            Is maint == 4?
+            --> True:
+              Is doors == more?
+              --> True:
+                Predict {'acc': 2, 'unacc': 1}
+              --> False:
+                Predict {'acc': 2, 'unacc': 2}
+            --> False:
+              Is doors == more?
+              --> True:
+                Predict {'acc': 2, 'unacc': 4}
+              --> False:
+                Is maint == 5more?
+                --> True:
+                  Predict {'acc': 1, 'unacc': 2}
+                --> False:
+                  Predict {'acc': 2, 'unacc': 2}
+      --> False:
+        Is lug_boot == med?
+        --> True:
+          Is persons == med?
+          --> True:
+            Is maint == 2?
+            --> True:
+              Predict {'unacc': 7}
+            --> False:
+              Is maint == 3?
+              --> True:
+                Predict {'unacc': 5}
+              --> False:
+                Predict {'acc': 7, 'unacc': 7}
+          --> False:
+            Is maint == 2?
+            --> True:
+              Is doors == more?
+              --> True:
+                Predict {'unacc': 1, 'acc': 2}
+              --> False:
+                Predict {'acc': 2}
+            --> False:
+              Is maint == 3?
+              --> True:
+                Is doors == 4?
+                --> True:
+                  Predict {'unacc': 2, 'acc': 1}
+                --> False:
+                  Predict {'acc': 2, 'unacc': 2}
+              --> False:
+                Is doors == more?
+                --> True:
+                  Is maint == 5more?
+                  --> True:
+                    Predict {'acc': 2, 'unacc': 1}
+                  --> False:
+                    Predict {'acc': 2, 'unacc': 2}
+                --> False:
+                  Predict {'acc': 4, 'unacc': 4}
+        --> False:
+          Is persons == big?
+          --> True:
+            Is maint == 4?
+            --> True:
+              Is doors == more?
+              --> True:
+                Predict {'unacc': 2}
+              --> False:
+                Predict {'unacc': 1, 'acc': 1}
+            --> False:
+              Is maint == 3?
+              --> True:
+                Predict {'unacc': 3, 'acc': 3}
+              --> False:
+                Predict {'acc': 6, 'unacc': 8}
+          --> False:
+            Is maint == 2?
+            --> True:
+              Predict {'unacc': 2, 'acc': 4}
+            --> False:
+              Is maint == 3?
+              --> True:
+                Is doors == 4?
+                --> True:
+                  Predict {'acc': 2, 'unacc': 1}
+                --> False:
+                  Predict {'unacc': 2, 'acc': 2}
+              --> False:
+                Predict {'acc': 8, 'unacc': 8}
+    --> False:
+      Is lug_boot == high?
+      --> True:
+        Is persons == small?
+        --> True:
+          Is buying  == high?
+          --> True:
+            Is doors == more?
+            --> True:
+              Is maint == 2?
+              --> True:
+                Predict {'unacc': 2}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Predict {'unacc': 1, 'acc': 1}
+                --> False:
+                  Predict {'acc': 6, 'unacc': 2}
+            --> False:
+              Is maint == 2?
+              --> True:
+                Predict {'acc': 2}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Predict {'acc': 2, 'unacc': 1}
+                --> False:
+                  Predict {'acc': 6, 'unacc': 2}
+          --> False:
+            Is maint == 2?
+            --> True:
+              Is doors == more?
+              --> True:
+                Predict {'unacc': 5}
+              --> False:
+                Is buying  == low?
+                --> True:
+                  Predict {'acc': 2}
+                --> False:
+                  Predict {'good': 1, 'acc': 1}
+            --> False:
+              Is buying  == low?
+              --> True:
+                Is maint == 5more?
+                --> True:
+                  Predict {'acc': 4, 'good': 2}
+                --> False:
+                  Is doors == 4?
+                  --> True:
+                    Predict {'acc': 4, 'good': 4}
+                  --> False:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'acc': 1, 'good': 2}
+                    --> False:
+                      Predict {'good': 2}
+              --> False:
+                Is doors == more?
+                --> True:
+                  Is maint == 4?
+                  --> True:
+                    Predict {'acc': 3}
+                  --> False:
+                    Predict {'acc': 6, 'good': 2}
+                --> False:
+                  Is maint == 4?
+                  --> True:
+                    Predict {'acc': 1, 'good': 1}
+                  --> False:
+                    Is maint == 3?
+                    --> True:
+                      Predict {'acc': 2, 'good': 1}
+                    --> False:
+                      Predict {'acc': 3, 'good': 1}
+        --> False:
+          Is buying  == high?
+          --> True:
+            Is maint == 5more?
+            --> True:
+              Is doors == more?
+              --> True:
+                Is persons == big?
+                --> True:
+                  Predict {'vgood': 1, 'acc': 2}
+                --> False:
+                  Predict {'vgood': 1, 'acc': 1}
+              --> False:
+                Is persons == big?
+                --> True:
+                  Predict {'vgood': 1, 'acc': 1, 'unacc': 1}
+                --> False:
+                  Predict {'acc': 2}
+            --> False:
+              Is persons == big?
+              --> True:
+                Is maint == 4?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Predict {'acc': 2, 'unacc': 1}
+                  --> False:
+                    Predict {'unacc': 1, 'acc': 2, 'vgood': 1}
+                --> False:
+                  Is doors == more?
+                  --> True:
+                    Is maint == 2?
+                    --> True:
+                      Predict {'acc': 1, 'vgood': 1, 'unacc': 1}
+                    --> False:
+                      Predict {'vgood': 1, 'unacc': 1, 'acc': 2}
+                  --> False:
+                    Is maint == 2?
+                    --> True:
+                      Predict {'acc': 2, 'vgood': 1}
+                    --> False:
+                      Predict {'vgood': 1, 'unacc': 1, 'acc': 2}
+              --> False:
+                Is doors == more?
+                --> True:
+                  Is maint == 2?
+                  --> True:
+                    Predict {'acc': 2, 'unacc': 1}
+                  --> False:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'vgood': 1, 'unacc': 1, 'acc': 2}
+                    --> False:
+                      Predict {'vgood': 1, 'acc': 1, 'unacc': 1}
+                --> False:
+                  Is maint == 4?
+                  --> True:
+                    Predict {'unacc': 1, 'acc': 1}
+                  --> False:
+                    Is maint == 3?
+                    --> True:
+                      Predict {'acc': 2, 'unacc': 1}
+                    --> False:
+                      Predict {'acc': 3, 'unacc': 1}
+          --> False:
+            Is persons == big?
+            --> True:
+              Is doors == 4?
+              --> True:
+                Is buying  == low?
+                --> True:
+                  Is maint == 2?
+                  --> True:
+                    Predict {'vgood': 2, 'acc': 1}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'vgood': 2, 'acc': 1}
+                    --> False:
+                      Predict {'vgood': 4, 'acc': 4}
+                --> False:
+                  Is maint == 3?
+                  --> True:
+                    Predict {'vgood': 2, 'acc': 1}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'acc': 2, 'vgood': 1}
+                    --> False:
+                      Predict {'vgood': 2, 'acc': 2}
+              --> False:
+                Is maint == 2?
+                --> True:
+                  Predict {'acc': 4, 'vgood': 4}
+                --> False:
+                  Is buying  == low?
+                  --> True:
+                    Is maint == 3?
+                    --> True:
+                      Predict {'acc': 2}
+                    --> False:
+                      Is maint == 5more?
+                      --> True:
+                        Predict {'acc': 2, 'vgood': 1}
+                      --> False:
+                        Predict {'vgood': 2, 'acc': 2}
+                  --> False:
+                    Is maint == 3?
+                    --> True:
+                      Predict {'vgood': 2, 'acc': 1}
+                    --> False:
+                      Predict {'vgood': 2, 'acc': 4}
+            --> False:
+              Is maint == 2?
+              --> True:
+                Is buying  == med?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Predict {'good': 1, 'acc': 1}
+                  --> False:
+                    Predict {'acc': 3}
+                --> False:
+                  Is doors == more?
+                  --> True:
+                    Predict {'good': 2, 'acc': 1}
+                  --> False:
+                    Predict {'good': 2, 'acc': 2}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Is buying  == low?
+                    --> True:
+                      Predict {'vgood': 1}
+                    --> False:
+                      Predict {'vgood': 1, 'acc': 2}
+                  --> False:
+                    Is buying  == low?
+                    --> True:
+                      Predict {'good': 1, 'acc': 2}
+                    --> False:
+                      Predict {'good': 1, 'acc': 1}
+                --> False:
+                  Is maint == 5more?
+                  --> True:
+                    Is doors == more?
+                    --> True:
+                      Is buying  == low?
+                      --> True:
+                        Predict {'vgood': 2, 'acc': 1}
+                      --> False:
+                        Predict {'vgood': 1, 'acc': 2}
+                    --> False:
+                      Is buying  == low?
+                      --> True:
+                        Predict {'acc': 1, 'vgood': 1}
+                      --> False:
+                        Predict {'vgood': 2, 'acc': 1}
+                  --> False:
+                    Is doors == more?
+                    --> True:
+                      Is buying  == low?
+                      --> True:
+                        Predict {'acc': 2, 'vgood': 1}
+                      --> False:
+                        Predict {'vgood': 2, 'acc': 2}
+                    --> False:
+                      Predict {'vgood': 4, 'acc': 4}
+      --> False:
+        Is persons == small?
+        --> True:
+          Is buying  == high?
+          --> True:
+            Is maint == 2?
+            --> True:
+              Predict {'unacc': 7}
+            --> False:
+              Is doors == more?
+              --> True:
+                Is maint == 3?
+                --> True:
+                  Predict {'unacc': 2, 'acc': 1}
+                --> False:
+                  Predict {'acc': 2, 'unacc': 6}
+              --> False:
+                Is maint == 4?
+                --> True:
+                  Predict {'unacc': 3, 'acc': 1}
+                --> False:
+                  Predict {'unacc': 5}
+          --> False:
+            Is maint == 2?
+            --> True:
+              Is doors == more?
+              --> True:
+                Predict {'unacc': 7}
+              --> False:
+                Is buying  == low?
+                --> True:
+                  Predict {'unacc': 2, 'acc': 1}
+                --> False:
+                  Predict {'unacc': 2, 'acc': 2}
+            --> False:
+              Is maint == 3?
+              --> True:
+                Predict {'unacc': 4, 'acc': 8}
+              --> False:
+                Is buying  == low?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Predict {'unacc': 3, 'acc': 3}
+                  --> False:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'acc': 2, 'unacc': 1}
+                    --> False:
+                      Predict {'acc': 2, 'unacc': 2}
+                --> False:
+                  Is doors == more?
+                  --> True:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'unacc': 2, 'acc': 1}
+                    --> False:
+                      Predict {'acc': 2, 'unacc': 2}
+                  --> False:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'unacc': 1}
+                    --> False:
+                      Predict {'unacc': 2, 'acc': 2}
+        --> False:
+          Is buying  == high?
+          --> True:
+            Is persons == big?
+            --> True:
+              Is doors == more?
+              --> True:
+                Is maint == 2?
+                --> True:
+                  Predict {'acc': 2}
+                --> False:
+                  Is maint == 3?
+                  --> True:
+                    Predict {'acc': 2}
+                  --> False:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'unacc': 1, 'acc': 2}
+                    --> False:
+                      Predict {'acc': 3, 'unacc': 1}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Predict {'unacc': 1, 'acc': 2}
+                --> False:
+                  Predict {'acc': 9, 'unacc': 3}
+            --> False:
+              Is maint == 2?
+              --> True:
+                Predict {'unacc': 6, 'acc': 2}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Predict {'acc': 3, 'unacc': 1}
+                  --> False:
+                    Predict {'unacc': 3}
+                --> False:
+                  Is doors == 4?
+                  --> True:
+                    Is maint == 4?
+                    --> True:
+                      Predict {'acc': 3, 'unacc': 1}
+                    --> False:
+                      Predict {'acc': 1}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'acc': 2, 'unacc': 1}
+                    --> False:
+                      Predict {'acc': 3, 'unacc': 1}
+          --> False:
+            Is persons == big?
+            --> True:
+              Is buying  == low?
+              --> True:
+                Is maint == 4?
+                --> True:
+                  Predict {'good': 4, 'acc': 2}
+                --> False:
+                  Is maint == 3?
+                  --> True:
+                    Is doors == 4?
+                    --> True:
+                      Predict {'acc': 1, 'good': 2}
+                    --> False:
+                      Predict {'good': 2, 'acc': 2}
+                  --> False:
+                    Is doors == more?
+                    --> True:
+                      Predict {'acc': 3, 'good': 3}
+                    --> False:
+                      Is maint == 5more?
+                      --> True:
+                        Predict {'acc': 2, 'good': 1}
+                      --> False:
+                        Predict {'good': 2, 'acc': 2}
+              --> False:
+                Is doors == more?
+                --> True:
+                  Is maint == 4?
+                  --> True:
+                    Predict {'acc': 2, 'good': 1}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'acc': 2, 'good': 1}
+                    --> False:
+                      Predict {'acc': 6, 'good': 2}
+                --> False:
+                  Is maint == 2?
+                  --> True:
+                    Predict {'acc': 1, 'good': 1}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Predict {'acc': 3, 'good': 1}
+                    --> False:
+                      Predict {'good': 2, 'acc': 4}
+            --> False:
+              Is maint == 2?
+              --> True:
+                Is buying  == low?
+                --> True:
+                  Is doors == more?
+                  --> True:
+                    Predict {'acc': 1, 'unacc': 2}
+                  --> False:
+                    Predict {'acc': 2, 'unacc': 2}
+                --> False:
+                  Is doors == more?
+                  --> True:
+                    Predict {'acc': 2, 'unacc': 1}
+                  --> False:
+                    Predict {'acc': 2, 'unacc': 2}
+              --> False:
+                Is maint == 3?
+                --> True:
+                  Is doors == 4?
+                  --> True:
+                    Is buying  == low?
+                    --> True:
+                      Predict {'unacc': 2, 'acc': 1}
+                    --> False:
+                      Predict {'acc': 1}
+                  --> False:
+                    Predict {'acc': 3, 'good': 3}
+                --> False:
+                  Is buying  == low?
+                  --> True:
+                    Is doors == more?
+                    --> True:
+                      Predict {'acc': 2, 'good': 4}
+                    --> False:
+                      Is maint == 4?
+                      --> True:
+                        Predict {'good': 2, 'acc': 1}
+                      --> False:
+                        Predict {'good': 2, 'acc': 2}
+                  --> False:
+                    Is maint == 5more?
+                    --> True:
+                      Is doors == more?
+                      --> True:
+                        Predict {'acc': 1}
+                      --> False:
+                        Predict {'acc': 3, 'good': 1}
+                    --> False:
+                      Is doors == more?
+                      --> True:
+                        Predict {'acc': 2, 'good': 1}
+                      --> False:
+                        Predict {'acc': 3, 'good': 1}
+Accuracy on test = 0.76
